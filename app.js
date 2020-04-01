@@ -5,7 +5,7 @@ const app = express();
 const WebSocketServer = require('ws').Server;
 const server = require('http').createServer(app);
 const wss = new WebSocketServer({ server });
-const port = 3000;
+const port = 3300;
 
 // Serve js files
 app.use('/js', express.static(path.join(__dirname, 'ui/js/')));
@@ -90,3 +90,4 @@ wss.broadcast = function broadcast(data) {
 
 
 server.listen(port, () => console.log(`App listening on port ${port}!`))
+
