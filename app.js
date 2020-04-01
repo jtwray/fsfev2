@@ -21,7 +21,6 @@ app.get('/', (req, res) => {
 
 function handleQuery(query, cb) {
     cb('Awesome');
-}
 
 /**
  * Client Counter
